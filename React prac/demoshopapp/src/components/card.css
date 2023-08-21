@@ -1,0 +1,30 @@
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-card{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding-block: 10px;
+}
+
+.product-item{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 5px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}

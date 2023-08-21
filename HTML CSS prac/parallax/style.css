@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.bg {
+    height: 100%;
+    width: 90%;
+    transform: translateZ(-40px) scale(5.7);
+}
+
+.fg {
+    top: 70%;
+    align-self: center;
+    height: 30%;
+    width: 40%;
+    transform: translateZ(-10px) scale(1.5);
+}
+
+.bg, .fg {
+    position: absolute;
+    z-index: -1;
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+h2{
+    position: relative;
+    font-size: 5rem;
+    padding: 0 10rem;
+    top: 80%;
+    text-shadow: 2px 2px 1px black;
+}
+
+p{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.map{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mondstadt{
+    background-image: url(Mondstadt.jpg);
+}
+.liyue{
+    background-image: url(Liyue.jpg);
+}
+.inazuma{
+    background-image: url(Inazuma.jpg);
+}
+.sumeru{
+    background-image: url(Sumeru.jpg);
+}
+.fontaine{
+    background-image: url(fontaine.jpg);
+}
+.natlan{
+    background-image: url(Natlan.jpg);
+}
+.snezhnaya{
+    background-image: url(snezhnaya.jpg);
+}

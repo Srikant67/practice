@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="http://fonts.googleapis.com/css?family=Merriweather&#8217">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather app</h1>
+        <div class="tab-container">
+            <p class = "tab" data-userWeather>Your weather</p>
+            <p class = "tab" data-searchWeather>Search weather</p>
+        </div>
+        <div class="weather-container">
+
+            <!--grant location access-->
+
+            <div class="grant-container">
+                <img src="assets/location.png" width="80" height="110" loading="lazy">
+                <p id="grant-title">Grant location access</p>
+                <p id="grant-desc">Allow access to get weather details</p>
+                <button class="btn" data-grant>Grant access</button>
+            </div>
+
+            <!--search form-->
+
+            <form class="form-container" data-searchForm>
+                <input type="text" placeholder="Search for city" data-searchInput>
+                <button class="btn" data-search type="submit">
+                    <img src="assets/search.png" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            <!--loading screen-->
+
+            <div class="loading">
+                <img src="assets/loading.gif" width="100" height="100">
+                <p>Loading</p>
+            </div>
+
+            <!--weather details-->
+
+            <div class="user-weather-info">
+                <div class="city-name">
+                    <p data-cityName></p>
+                    <img data-countryIcon width="20" height="15">
+                </div>
+                <p data-desc></p>
+                <img data-weatherImg>
+                <p data-temp></p>
+                <div class="parameter-container">
+
+                    <!--card 1-->
+                    <div class="parameter">
+                        <img src="assets/wind.png">
+                        <p>Windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+                    
+                    <!--card 2-->
+
+                    <div class="parameter">
+                        <img src="assets/humidity.png" width="50" height="50">
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                     </div>
+
+                    <!--card 3-->
+
+                    <div class="parameter">
+                        <img src="assets/cloud.png" width="50" height="50">
+                        <p>Cloudiness</p>
+                        <p data-cloud></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="error">
+            <img src="assets/error.png" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

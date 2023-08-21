@@ -1,0 +1,10 @@
+.date{
+    text-align: center;
+    font-size: 15px;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    color: white;
+    border-radius: 10px;
+    padding-top: 15px;    
+}

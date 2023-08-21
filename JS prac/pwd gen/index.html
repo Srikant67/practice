@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="display-container">
+            <input readonly placeholder = "Password" class="display" data-passDisplay>
+            <button data-copybtn>
+                <span data-copymsg></span>
+                <img src="copy.png" width="23" height="23">
+            </button>
+        </div>
+
+        <div class="input-container">
+
+            <div class="length-container">
+                <p>Password length</p>
+                <p data-length>10</p>
+            </div>
+
+            <input type="range" min="1" max="20" step="1" data-slider>
+
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include uppercase letters</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include lowercase letters</label>
+            </div>
+            <div>
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Include numbers</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Include symbols</label>
+            </div>
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <div class="strength-icon" data-indicator></div>
+            </div>
+
+            <button class="generate-btn">GENERATE PASSWORD</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
